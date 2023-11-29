@@ -40,7 +40,7 @@ public class Market implements MarketBehavior, QueueBehavior{
     @Override
     public void releaseFromQueue() {
         List<Actor> releasedActors = new ArrayList<>();
-        for (Actor actor : releasedActors) {
+        for (Actor actor : queue) {
             if (actor.isTakeOrder()) {
                 releasedActors.add(actor);
                 System.out.println(actor.getName() + " вышел из очереди и готов уходить");
