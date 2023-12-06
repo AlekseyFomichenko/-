@@ -1,8 +1,5 @@
 import java.util.Comparator;
 
-/**
- * StudentComparator
- */
 public class UserComparator<T extends User> implements Comparator<T>{
 
     @Override

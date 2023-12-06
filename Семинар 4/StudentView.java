@@ -8,6 +8,4 @@ public class StudentView implements UserView<Student> {
             System.out.println(i);
         }
     }
-    
-    
 }

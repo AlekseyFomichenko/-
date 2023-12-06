@@ -13,7 +13,7 @@ public class TeacherService implements UserService<Teacher>{
                 maxId = i.getTeacherID();
             }
         }
-        teacherList.add(new Student(++maxId, firstName, secondName, lastName));
+        teacherList.add(new Teacher(++maxId, firstName, secondName, lastName));
     }
 
     public List<Teacher> getTeacherList() {
