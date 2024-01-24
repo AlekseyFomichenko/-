@@ -8,7 +8,6 @@ public class ToyStore {
     //region fields
 
     PriorityQueue<Toy> tPriorityQueue;
-
     //endregion
 
     /** 
