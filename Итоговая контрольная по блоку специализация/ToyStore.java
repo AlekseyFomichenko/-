@@ -1,23 +1,37 @@
 import java.util.PriorityQueue;
 
+import Modul.Toy;
+/*
+ * Класс игрового автомата
+ */
 public class ToyStore {
+    //region fields
+
     PriorityQueue<Toy> tPriorityQueue;
 
+    //endregion
+
+    /** 
+     * Конструктор - создание нового объекта с определенными значениями
+     * @param tPriorityQueue - очередь с приоритетом
+     */
     public ToyStore() {
-        tPriorityQueue = new PriorityQueue<>();
+        this.tPriorityQueue = new PriorityQueue<>();
     }
 
-    public Integer get(){ // должен возвращать id игрушки
-        // Нужно реализовать метод, который будет вытягивать игрушку из очереди, но не удалять её оттуда.
-        // Использовать метод rule()
-        return 0;
+    /** 
+     * Функция получения и удаления игрушки из очереди
+     * @return возвращает и удаляет экземпляр игрушки
+     */
+    public Toy get() {
+        return tPriorityQueue.poll();
     }
-    
-    public void put(Toy toy){
+
+    /** 
+     * Функция загрузки игрушки в очередь
+     * @param toy - игрушка
+     */
+    public void put(Toy toy) {
         tPriorityQueue.add(toy);
-    }
-
-    private void rule(){
-        // Также нужно задать здесь правило вытягивания из очереди
     }
 }

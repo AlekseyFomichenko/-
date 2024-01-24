@@ -1,0 +1,10 @@
+id toy: 3 | name toy: Кукла | frequency toy: 6 
+id toy: 1 | name toy: Конструктор | frequency toy: 5 
+id toy: 2 | name toy: Робот | frequency toy: 2 
+[null]
+[null]
+[null]
+[null]
+[null]
+[null]
+[null]
